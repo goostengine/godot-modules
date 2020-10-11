@@ -56,8 +56,8 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-        name: godot.windows.opt.tools.64.goost
-        path: godot/bin/godot.windows.opt.tools.64.goost.exe
+        name: ${{github.job}}
+        path: godot/bin/*
 
   windows-template:
     runs-on: "windows-latest"

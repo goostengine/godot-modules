@@ -61,8 +61,8 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: godot.x11.opt.tools.64.goost.mono
-          path: godot/bin/godot.x11.opt.tools.64.goost.mono
+          name: ${{github.job}}
+          path: godot/bin/*
 
   linux-server:
     runs-on: "ubuntu-20.04"
