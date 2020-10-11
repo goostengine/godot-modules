@@ -26,10 +26,10 @@ if not godot_dir.exists():
     run(["git", "checkout", godot_ver, "--quiet"], godot_dir.abspath)
 
 # Setup base SCons arguments to the Godot build command.
-build_args = ["scons"]
+args = ["scons"]
 for arg in ARGLIST:
     opt = "%s=%s" % (arg[0], arg[1])
-    build_args.append(opt)
+    args.append(opt)
 
 # Search for modules recursively. The following scenarios may apply:
 # - a module has nested modules versioned alongside a repository.
@@ -46,10 +46,10 @@ def detect_modules_recursive(node="."):
                 modules.add(os.path.dirname(f.abspath))
 
 detect_modules_recursive()
-build_args.append("custom_modules=%s" % ",".join(modules))
+args.append("custom_modules=%s" % ",".join(modules))
 
 # Append the default `extra_suffix` to distinguish between other builds.
-build_args.append("extra_suffix=modules")
+args.append("extra_suffix=modules")
 
 # Override the default build name for the editor.
 os.environ["BUILD_NAME"] = "modules"
@@ -63,6 +63,11 @@ if scons_cache_path != None:
     CacheDir(scons_cache_path)
     print("SCons cache enabled... (path: '" + scons_cache_path + "')")
 
+if os.getenv("GITHUB_ACTION"):
+    # Disable some modules globally, because we cannot control the clone depth:
+    # https://github.com/actions/checkout/issues/367
+    args.append("module_voronoi_enabled=no")
+
 # Some SCons-specific options may not trigger an actual build.
 skip_build = False
 
@@ -72,13 +77,13 @@ for opt in scons_options:
     if not GetOption(opt):
         continue
     skip_build |= opt in ["help", "clean"]
-    build_args.append("--%s" % opt)
+    args.append("--%s" % opt)
 
 if GetOption("num_jobs") > 1:
-    build_args.append("--jobs=%s" % GetOption("num_jobs"))
+    args.append("--jobs=%s" % GetOption("num_jobs"))
 
 if not skip_build:
     print("Building Godot ...")
 
 # Run SCons to build Godot, check the build configuration etc.
-run(build_args, godot_dir.abspath)
+run(args, godot_dir.abspath)

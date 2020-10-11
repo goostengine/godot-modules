@@ -19,6 +19,8 @@ jobs:
     name: Editor (target=release_debug, tools=yes)
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: true
 
     # Editing this is pretty dangerous for Windows since it can break.
     # Needs to be properly tested with a fresh cache.
@@ -54,8 +56,8 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-        name: godot.windows.opt.tools.64.goost
-        path: godot/bin/godot.windows.opt.tools.64.goost.exe
+        name: ${{github.job}}
+        path: godot/bin/*
 
   windows-template:
     runs-on: "windows-latest"
@@ -63,6 +65,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: true
 
     # Editing this is pretty dangerous for Windows since it can break.
     # Needs to be properly tested with a fresh cache.

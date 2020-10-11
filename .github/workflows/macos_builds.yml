@@ -20,6 +20,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
 
       - name: Load .scons_cache directory
         id: macos-editor-cache
@@ -53,8 +55,8 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: godot.osx.opt.tools.64.goost
-          path: godot/bin/godot.osx.opt.tools.64.goost
+          name: ${{github.job}}
+          path: godot/bin/*
 
   macos-template:
     runs-on: "macos-latest"
@@ -62,6 +64,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
 
       - name: Load .scons_cache directory
         id: macos-template-cache
