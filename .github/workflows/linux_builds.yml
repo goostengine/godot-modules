@@ -21,6 +21,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+          fetch-depth: 3
 
       # Install all packages except SCons
       - name: Configure dependencies
@@ -72,6 +73,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+          fetch-depth: 3
 
       # Install all packages except SCons.
       - name: Configure dependencies
@@ -122,6 +124,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+          fetch-depth: 3
 
       # Install all packages except SCons.
       - name: Configure dependencies
