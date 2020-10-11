@@ -1,0 +1,28 @@
+[submodule "goost"]
+	path = modules/goost
+	url = https://github.com/goostengine/goost
+	branch = gd3
+[submodule "sqlite"]
+	path = modules/sqlite
+	url = https://github.com/godot-extended-libraries/godot-sqlite
+	branch = 3.2
+[submodule "gltf"]
+	path = modules/gltf
+	url = https://github.com/godot-extended-libraries/gltf
+	branch = master
+[submodule "json"]
+	path = modules/json
+	url = https://github.com/godot-extended-libraries/json
+	branch = master
+[submodule "anl"]
+	path = modules/anl
+	url = https://github.com/Xrayez/godot-anl
+	branch = gd3
+[submodule "qurobullet"]
+	path = modules/qurobullet
+	url = https://github.com/quinnvoker/qurobullet
+	branch = master
+[submodule "voronoi"]
+	path = modules/voronoi
+	url = https://github.com/rakai93/godot_voronoi
+	branch = master
