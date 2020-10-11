@@ -19,6 +19,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
 
       # Install all packages except SCons
       - name: Configure dependencies
@@ -68,6 +70,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
 
       # Install all packages except SCons.
       - name: Configure dependencies
@@ -116,6 +120,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
 
       # Install all packages except SCons.
       - name: Configure dependencies
