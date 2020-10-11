@@ -23,7 +23,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-          fetch-depth: 3
 
       - name: Load .scons_cache directory
         id: javascript-template-cache

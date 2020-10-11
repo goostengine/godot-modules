@@ -21,7 +21,6 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: true
-        fetch-depth: 3
 
     # Editing this is pretty dangerous for Windows since it can break.
     # Needs to be properly tested with a fresh cache.
@@ -68,7 +67,6 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: true
-        fetch-depth: 3
 
     # Editing this is pretty dangerous for Windows since it can break.
     # Needs to be properly tested with a fresh cache.
