@@ -26,3 +26,19 @@
 	path = modules/voronoi
 	url = https://github.com/rakai93/godot_voronoi
 	branch = master
+[submodule "voxel"]
+	path = modules/voxel
+	url = https://github.com/Zylann/godot_voxel
+	branch = master
+[submodule "lportal"]
+	path = modules/lportal
+	url = https://github.com/lawnjelly/godot-lportal
+	branch = master
+[submodule "llightmap"]
+	path = modules/llightmap
+	url = https://github.com/lawnjelly/godot-llightmap
+	branch = master
+[submodule "smooth"]
+	path = modules/smooth
+	url = https://github.com/lawnjelly/godot-smooth
+	branch = master
