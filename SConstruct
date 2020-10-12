@@ -63,11 +63,6 @@ if scons_cache_path != None:
     CacheDir(scons_cache_path)
     print("SCons cache enabled... (path: '" + scons_cache_path + "')")
 
-if os.getenv("GITHUB_ACTION"):
-    # Disable some modules globally, because we cannot control the clone depth:
-    # https://github.com/actions/checkout/issues/367
-    args.append("module_voronoi_enabled=no")
-
 # Some SCons-specific options may not trigger an actual build.
 skip_build = False
 

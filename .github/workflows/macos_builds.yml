@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true
+          submodules: recursive
 
       - name: Load .scons_cache directory
         id: macos-editor-cache
@@ -65,7 +65,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true
+          submodules: recursive
 
       - name: Load .scons_cache directory
         id: macos-template-cache
