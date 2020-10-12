@@ -58,8 +58,8 @@ def disable_module(name, reason=""):
 if ARGUMENTS.get("target") == "release":
     disable_module("llightmap", "Cannot compile for `target=release`")
     
-if ARGUMENTS.get("platform") == "osx":
-    disable_module("voxel", "Cannot compile for `platform=osx`")
+if ARGUMENTS.get("platform") in ["osx", "javascript"]:
+    disable_module("voxel", "Cannot compile for `platform=osx,javascript`")
 
 # Append the default `extra_suffix` to distinguish between other builds.
 args.append("extra_suffix=modules")
