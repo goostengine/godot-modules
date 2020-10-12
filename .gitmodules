@@ -38,10 +38,6 @@
 	path = modules/llightmap
 	url = https://github.com/lawnjelly/godot-llightmap
 	branch = master
-[submodule "lsimd"]
-	path = modules/lsimd
-	url = https://github.com/lawnjelly/godot-lsimd
-	branch = master
 [submodule "smooth"]
 	path = modules/smooth
 	url = https://github.com/lawnjelly/godot-smooth
