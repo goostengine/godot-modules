@@ -48,6 +48,19 @@ def detect_modules_recursive(node="."):
 detect_modules_recursive()
 args.append("custom_modules=%s" % ",".join(modules))
 
+# Disable some modules which cannot be built.
+def disable_module(name, reason=""):
+    print("Disabling module: %s" % name)
+    if reason:
+        print("Reason: %s" % reason)
+    args.append("module_%s_enabled=no" % name)
+
+if ARGUMENTS.get("target") == "release":
+    disable_module("llightmap", "Cannot compile for `target=release`")
+    
+if ARGUMENTS.get("platform") == "osx":
+    disable_module("voxel", "Cannot compile for `platform=osx`")
+
 # Append the default `extra_suffix` to distinguish between other builds.
 args.append("extra_suffix=modules")
 
@@ -62,11 +75,6 @@ scons_cache_path = os.environ.get("SCONS_CACHE")
 if scons_cache_path != None:
     CacheDir(scons_cache_path)
     print("SCons cache enabled... (path: '" + scons_cache_path + "')")
-
-if os.getenv("GITHUB_ACTION"):
-    # Disable some modules globally, because we cannot control the clone depth:
-    # https://github.com/actions/checkout/issues/367
-    args.append("module_voronoi_enabled=no")
 
 # Some SCons-specific options may not trigger an actual build.
 skip_build = False
