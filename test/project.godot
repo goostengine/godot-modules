@@ -1,0 +1,10 @@
+config_version=4
+
+[logging]
+
+file_logging/enable_file_logging.pc=false
+
+[node]
+
+name_num_separator=2
+name_casing=2
