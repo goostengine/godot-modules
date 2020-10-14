@@ -23,24 +23,26 @@ use in your project, it's *not* recommended to use this repository in production
 as it may not be actively updated.
 
 ## List of modules
-|                            Module name                             |               Short description                |  Supports   |
-| ------------------------------------------------------------------ | ---------------------------------------------- | ----------- |
-| [goost](https://github.com/goostengine/goost)                      | A general-purpose C++ extension for Godot.     | 🐧🍎🎨🤖🍏🌐      |
-| [sqlite](https://github.com/godot-extended-libraries/godot-sqlite) | SQLite for Godot based on gdsqlite-native.     | 🐧🍎🎨🤖🍏🌐      |
-| [gltf](https://github.com/godot-extended-libraries/gltf)           | glTF format support for 3D scenes and models.  | 🐧🍎🎨🤖🍏🌐      |
-| [json](https://github.com/godot-extended-libraries/json)           | Import JSON files as resources.                | 🐧🍎🎨🤖🍏🌐      |
-| [anl](https://github.com/Xrayez/godot-anl)                         | Accidental Noise Library in Godot.             | 🐧🍎🎨🤖🍏🌐      |
-| [qurobullet](https://github.com/quinnvoker/qurobullet)             | Design 2D projectile system.                   | 🐧🍎🎨🤖🍏🌐      |
-| [voronoi](https://github.com/rakai93/godot_voronoi)                | Compute Voronoi diagrams.                      | 🐧🍎🎨🤖🍏🌐      |
-| [voxel](https://github.com/Zylann/godot_voxel)                     | Create volumetric worlds.                      | 🐧🎨🤖🍏        |
-| [lportal](https://github.com/lawnjelly/godot-lportal)              | Portal rendering and culling.                  | 🐧🍎🎨🤖🍏🌐      |
-| [llightmap](https://github.com/lawnjelly/godot-llightmap)          | Soft shadows with high performance at runtime. | Editor-only |
-| [smooth](https://github.com/lawnjelly/godot-smooth)                | Fixed timestep interpolation helper nodes.     | 🐧🍎🎨🤖🍏🌐      |
+|                              Module name                              |               Short description                |  Supports   |
+| --------------------------------------------------------------------- | ---------------------------------------------- | ----------- |
+| [goost](https://github.com/goostengine/goost)                         | A general-purpose C++ extension for Godot.     | 🐧🍎🎨🤖🍏🌐      |
+| [sqlite](https://github.com/godot-extended-libraries/godot-sqlite)    | SQLite for Godot based on gdsqlite-native.     | 🐧🍎🎨🤖🍏🌐      |
+| [gltf](https://github.com/godot-extended-libraries/gltf)              | glTF format support for 3D scenes and models.  | 🐧🍎🎨🤖🍏🌐      |
+| [json](https://github.com/godot-extended-libraries/json)              | Import JSON files as resources.                | 🐧🍎🎨🤖🍏🌐      |
+| [anl](https://github.com/Xrayez/godot-anl)                            | Accidental Noise Library in Godot.             | 🐧🍎🎨🤖🍏🌐      |
+| [qurobullet](https://github.com/quinnvoker/qurobullet)                | Design 2D projectile system.                   | 🐧🍎🎨🤖🍏🌐      |
+| [voronoi](https://github.com/rakai93/godot_voronoi)                   | Compute Voronoi diagrams.                      | 🐧🍎🎨🤖🍏🌐      |
+| [voxel](https://github.com/Zylann/godot_voxel)                        | Create volumetric worlds.                      | 🐧🎨🤖🍏        |
+| [lportal](https://github.com/lawnjelly/godot-lportal)                 | Portal rendering and culling.                  | 🐧🍎🎨🤖🍏🌐      |
+| [llightmap](https://github.com/lawnjelly/godot-llightmap)             | Soft shadows with high performance at runtime. | Editor-only |
+| [smooth](https://github.com/lawnjelly/godot-smooth)                   | Fixed timestep interpolation helper nodes.     | 🐧🍎🎨🤖🍏🌐      |
+| [open_tabletop](https://github.com/drwhut/open_tabletop_godot_module) | Import resources at run-time.                  | 🐧🍎🎨🤖🍏🌐      |
 
 ## Building
 
-The process is similar to compiling the
-[Goost](https://github.com/goostengine/goost) Godot Engine extension:
+There are two ways to build all modules listed above.
+
+### Using `scons` command:
 
 ```sh
 git clone https://github.com/goostengine/godot-modules --recurse-submodules
@@ -48,9 +50,12 @@ cd godot-modules
 scons
 ```
 
-Note that this will clone the Godot Engine repository to compile all modules as
-part of it.
+The process is similar to compiling the
+[Goost](https://github.com/goostengine/goost) Godot Engine extension. This will
+clone the Godot Engine repository to compile all modules as part of it.
 
+### Using `custom_modules` build option
+  
 Alternatively, you can compile all the modules by using the
 [`custom_modules`](https://docs.godotengine.org/en/stable/development/compiling/introduction_to_the_buildsystem.html#custom-modules)
 build options directly from within the existing engine source code:
@@ -68,6 +73,10 @@ following Godot proposals:
 2. [Allow to customize C++ module name by not relying on module's directory name](https://github.com/godotengine/godot-proposals/issues/1561).
 
 Else you may need to specify the search paths manually in this case.
+
+Some modules may *not* compile on some platforms and/or targets as seen in the
+list above, so using `scons` is preferable in those cases as it automatically
+disables modules which cannot be compiled.
 
 To update submodules, run:
 

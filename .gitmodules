@@ -42,3 +42,7 @@
 	path = modules/smooth
 	url = https://github.com/lawnjelly/godot-smooth
 	branch = master
+[submodule "open_tabletop_godot_module"]
+	path = modules/open_tabletop_godot_module
+	url = https://github.com/drwhut/open_tabletop_godot_module
+	branch = master

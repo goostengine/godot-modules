@@ -57,7 +57,8 @@ def disable_module(name, reason=""):
 
 if ARGUMENTS.get("target") == "release":
     disable_module("llightmap", "Cannot compile for `target=release`")
-    
+    disable_module("open_tabletop_godot_module", "Cannot compile for `target=release`")
+
 if ARGUMENTS.get("platform") in ["osx", "javascript"]:
     disable_module("voxel", "Cannot compile for `platform=osx,javascript`")
 
