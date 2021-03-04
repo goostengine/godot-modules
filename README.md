@@ -38,6 +38,17 @@ as it may not be actively updated.
 | [smooth](https://github.com/lawnjelly/godot-smooth)                   | Fixed timestep interpolation helper nodes.     | 🐧🍎🎨🤖🍏🌐      |
 | [open_tabletop](https://github.com/drwhut/open_tabletop_godot_module) | Import resources at run-time.                  | 🐧🍎🎨🤖🍏🌐      |
 
+## Trying out
+
+If available, you can download nighty builds of the above modules for Linux,
+macOS, Windows integrated into Godot editor builds for testing purposes:
+
+- [🐧 Linux](https://nightly.link/goostengine/godot-modules/workflows/linux_builds/gd3/linux-editor.zip)
+- [🍎 macOS](https://nightly.link/goostengine/godot-modules/workflows/macos_builds/gd3/macos-editor.zip)
+- [🎨 Windows](https://nightly.link/goostengine/godot-modules/workflows/windows_builds/gd3/windows-editor.zip)
+
+Otherwise you'll have to build Godot with custom modules yourself, read on.
+
 ## Building
 
 There are two ways to build all modules listed above.
