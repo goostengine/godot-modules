@@ -66,14 +66,6 @@ cd godot
 scons custom_modules="../godot-modules/modules"
 ```
 
-But you should be aware of module detection limitations as described in the
-following Godot proposals:
-
-1. [Detect custom C++ modules recursively](https://github.com/godotengine/godot-proposals/issues/1619).
-2. [Allow to customize C++ module name by not relying on module's directory name](https://github.com/godotengine/godot-proposals/issues/1561).
-
-Else you may need to specify the search paths manually in this case.
-
 Some modules may *not* compile on some platforms and/or targets as seen in the
 list above, so using `scons` is preferable in those cases as it automatically
 disables modules which cannot be compiled.
@@ -97,6 +89,9 @@ git submodule add --name <NAME> --branch <BRANCH> <URL> modules/<NAME>
 
 Make sure that the added modules do compile, commit the changes and then feel
 free to open a pull request.
+
+Also, consider supporting this Godot proposal:
+- [Allow to customize C++ module name by not relying on module's directory name](https://github.com/godotengine/godot-proposals/issues/1561).
 
 ## License
 

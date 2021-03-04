@@ -31,22 +31,7 @@ for arg in ARGLIST:
     opt = "%s=%s" % (arg[0], arg[1])
     args.append(opt)
 
-# Search for modules recursively. The following scenarios may apply:
-# - a module has nested modules versioned alongside a repository.
-# - a module is not located at the root of a repository.
-modules = set()
-def detect_modules_recursive(node="."):
-    from SCons import Node
-    for f in Glob(str(node) + "/*"):
-        if type(f) is Node.FS.Dir:
-            if f == Dir("godot"):
-                continue
-            detect_modules_recursive(f)
-            if os.path.exists(os.path.join(f.abspath, "register_types.h")):
-                modules.add(os.path.dirname(f.abspath))
-
-detect_modules_recursive()
-args.append("custom_modules=%s" % ",".join(modules))
+args.append("custom_modules=%s" % Dir("modules").abspath)
 
 # Disable some modules which cannot be built.
 def disable_module(name, reason=""):
@@ -63,10 +48,10 @@ if ARGUMENTS.get("platform") in ["osx", "javascript"]:
     disable_module("voxel", "Cannot compile for `platform=osx,javascript`")
 
 # Append the default `extra_suffix` to distinguish between other builds.
-args.append("extra_suffix=modules")
+args.append("extra_suffix=community")
 
 # Override the default build name for the editor.
-os.environ["BUILD_NAME"] = "modules"
+os.environ["BUILD_NAME"] = "community"
 
 # Avoid issues when building with different versions of Python.
 SConsignFile(".sconsign{0}.dblite".format(pickle.HIGHEST_PROTOCOL))
