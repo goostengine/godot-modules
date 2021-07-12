@@ -46,6 +46,7 @@ disable_module("voxel", cannot_compile)
 disable_module("tabletop_club_godot_module", cannot_compile)
 disable_module("llightmap", cannot_compile)
 disable_module("qurobullet", cannot_compile)
+disable_module("sqlite", cannot_compile)
 
 # Append the default `extra_suffix` to distinguish between other builds.
 args.append("extra_suffix=community")
