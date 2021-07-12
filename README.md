@@ -27,7 +27,6 @@ as it may not be actively updated.
 | --------------------------------------------------------------------- | ---------------------------------------------- |
 | [goost](https://github.com/goostengine/goost)                         | A general-purpose C++ extension for Godot.     |
 | [sqlite](https://github.com/godot-extended-libraries/godot-sqlite)    | SQLite for Godot based on gdsqlite-native.     |
-| [gltf](https://github.com/godot-extended-libraries/gltf)              | glTF format support for 3D scenes and models.  |
 | [json](https://github.com/godot-extended-libraries/json)              | Import JSON files as resources.                |
 | [anl](https://github.com/Xrayez/godot-anl)                            | Accidental Noise Library in Godot.             |
 | [qurobullet](https://github.com/quinnvoker/qurobullet)                | Design 2D projectile system.                   |
