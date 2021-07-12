@@ -35,7 +35,7 @@ as it may not be actively updated.
 | [lportal](https://github.com/lawnjelly/godot-lportal)                 | Portal rendering and culling.                  |
 | [llightmap](https://github.com/lawnjelly/godot-llightmap)             | Soft shadows with high performance at runtime. |
 | [smooth](https://github.com/lawnjelly/godot-smooth)                   | Fixed timestep interpolation helper nodes.     |
-| [open_tabletop](https://github.com/drwhut/open_tabletop_godot_module) | Import resources at run-time.                  |
+| [tabletop_club](https://github.com/drwhut/tabletop_club_godot_module) | Import resources at run-time.                  |
 
 ## Trying out
 
