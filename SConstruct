@@ -40,13 +40,14 @@ def disable_module(name, reason=""):
         print("Reason: %s" % reason)
     args.append("module_%s_enabled=no" % name)
     
-cannot_compile = "Cannot compile for Godot %s as of now" % godot_ver
+cannot_compile = "Cannot compile for Godot %s as of now." % godot_ver
 
 disable_module("voxel", cannot_compile)
 disable_module("tabletop_club_godot_module", cannot_compile)
-disable_module("llightmap", cannot_compile)
 disable_module("qurobullet", cannot_compile)
 disable_module("sqlite", cannot_compile)
+disable_module("llightmap", cannot_compile)
+disable_module("smooth", cannot_compile)
 
 # Append the default `extra_suffix` to distinguish between other builds.
 args.append("extra_suffix=community")
