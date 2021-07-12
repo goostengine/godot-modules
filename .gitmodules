@@ -42,3 +42,7 @@
 	path = modules/tabletop_club_godot_module
 	url = https://github.com/drwhut/tabletop_club_godot_module
 	branch = master
+[submodule "godot_box2d"]
+	path = modules/godot_box2d
+	url = https://github.com/briansemrau/godot_box2d
+	branch = 3.x
