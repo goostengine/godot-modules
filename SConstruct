@@ -7,7 +7,7 @@ import sys
 import pickle
 import subprocess
 
-godot_ver = "3.2"
+godot_ver = "3.x"
 godot_url = "https://github.com/godotengine/godot"
 godot_dir = Dir("godot")
 
@@ -39,18 +39,17 @@ def disable_module(name, reason=""):
     if reason:
         print("Reason: %s" % reason)
     args.append("module_%s_enabled=no" % name)
+    
+cannot_compile = "Cannot compile for Godot %s as of now" % godot_ver
+
+disable_module("voxel", cannot_compile)
+disable_module("tabletop_club_godot_module", cannot_compile)
 
 if ARGUMENTS.get("target") == "release":
     disable_module("llightmap", "Cannot compile for `target=release`")
-    disable_module("open_tabletop_godot_module", "Cannot compile for `target=release`")
-
-if ARGUMENTS.get("platform") in ["osx", "javascript"]:
-    disable_module("voxel", "Cannot compile for `platform=osx,javascript`")
 
 # Append the default `extra_suffix` to distinguish between other builds.
 args.append("extra_suffix=community")
-
-# Override the default build name for the editor.
 os.environ["BUILD_NAME"] = "community"
 
 # Avoid issues when building with different versions of Python.

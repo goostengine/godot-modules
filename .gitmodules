@@ -6,10 +6,6 @@
 	path = modules/sqlite
 	url = https://github.com/godot-extended-libraries/godot-sqlite
 	branch = 3.2
-[submodule "gltf"]
-	path = modules/gltf
-	url = https://github.com/godot-extended-libraries/gltf
-	branch = master
 [submodule "json"]
 	path = modules/json
 	url = https://github.com/godot-extended-libraries/json
@@ -42,7 +38,7 @@
 	path = modules/smooth
 	url = https://github.com/lawnjelly/godot-smooth
 	branch = master
-[submodule "open_tabletop_godot_module"]
-	path = modules/open_tabletop_godot_module
-	url = https://github.com/drwhut/open_tabletop_godot_module
+[submodule "tabletop_club_godot_module"]
+	path = modules/tabletop_club_godot_module
+	url = https://github.com/drwhut/tabletop_club_godot_module
 	branch = master
