@@ -9,7 +9,7 @@ on:
 
 env:
   BASE_BRANCH: gd3
-  SCONSFLAGS: platform=linuxbsd verbose=yes --jobs=4
+  SCONSFLAGS: platform=linuxbsd debug_symbols=no verbose=yes --jobs=4
   SCONS_CACHE_LIMIT: 4096
 
 jobs:

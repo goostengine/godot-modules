@@ -9,7 +9,7 @@ on:
 
 env:
   BASE_BRANCH: gd3
-  SCONSFLAGS: platform=windows verbose=yes --jobs=4
+  SCONSFLAGS: platform=windows debug_symbols=no verbose=yes --jobs=4
   SCONS_CACHE_MSVC_CONFIG: true
   SCONS_CACHE_LIMIT: 4096
 
@@ -24,7 +24,7 @@ jobs:
 
     - name: Load .scons_cache directory
       id: windows-editor-cache
-      uses: actions/cache@v2.1
+      uses: actions/cache@v2
       with:
         path: /.scons_cache/
         key: ${{github.job}}-${{env.BASE_BRANCH}}-${{github.ref}}-${{github.sha}}
