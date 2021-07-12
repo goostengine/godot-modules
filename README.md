@@ -12,7 +12,7 @@ curated by [Goost](https://github.com/goostengine/goost).
 The goal of this repository is to collect C++ modules for the purpose of
 accessibility and the ease of discovery. This allows to try out various modules
 conveniently from within a single, centralized place. Note that only editor
-builds are tes
+builds are tested and provided via build artifacts.
 
 Each module represents a `git` submodule versioned as part of this repository.
 
