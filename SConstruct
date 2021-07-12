@@ -44,9 +44,8 @@ cannot_compile = "Cannot compile for Godot %s as of now" % godot_ver
 
 disable_module("voxel", cannot_compile)
 disable_module("tabletop_club_godot_module", cannot_compile)
-
-if ARGUMENTS.get("target") == "release":
-    disable_module("llightmap", "Cannot compile for `target=release`")
+disable_module("llightmap", cannot_compile)
+disable_module("qurobullet", cannot_compile)
 
 # Append the default `extra_suffix` to distinguish between other builds.
 args.append("extra_suffix=community")
