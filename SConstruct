@@ -42,6 +42,7 @@ def disable_module(name, reason=""):
     
 cannot_compile = "Cannot compile for Godot %s as of now." % godot_ver
 
+disable_module("godot_box2d", cannot_compile)
 disable_module("voxel", cannot_compile)
 disable_module("tabletop_club_godot_module", cannot_compile)
 disable_module("qurobullet", cannot_compile)

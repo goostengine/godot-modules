@@ -23,17 +23,18 @@ as it may not be actively updated.
 ## List of modules
 |                              Module name                              |               Short description                | Build status |
 | --------------------------------------------------------------------- | ---------------------------------------------- | ------------ |
-| [goost](https://github.com/goostengine/goost)                         | A general-purpose C++ extension for Godot.     | ✔            |
-| [sqlite](https://github.com/godot-extended-libraries/godot-sqlite)    | SQLite for Godot based on gdsqlite-native.     | ❌            |
-| [json](https://github.com/godot-extended-libraries/json)              | Import JSON files as resources.                | ✔            |
 | [anl](https://github.com/Xrayez/godot-anl)                            | Accidental Noise Library in Godot.             | ✔            |
+| [box2d](https://github.com/briansemrau/godot_box2d)                   | Integrates Box2D physics library in Godot.     | ❌           |
+| [goost](https://github.com/goostengine/goost)                         | A general-purpose C++ extension for Godot.     | ✔            |
+| [json](https://github.com/godot-extended-libraries/json)              | Import JSON files as resources.                | ✔            |
+| [llightmap](https://github.com/lawnjelly/godot-llightmap)             | Soft shadows with high performance at runtime. | ❌            |
+| [lportal](https://github.com/lawnjelly/godot-lportal)                 | Portal rendering and culling.                  | ✔            |
 | [qurobullet](https://github.com/quinnvoker/qurobullet)                | Design 2D projectile system.                   | ❌            |
+| [smooth](https://github.com/lawnjelly/godot-smooth)                   | Fixed timestep interpolation helper nodes.     | ❌            |
+| [sqlite](https://github.com/godot-extended-libraries/godot-sqlite)    | SQLite for Godot based on gdsqlite-native.     | ❌            |
+| [tabletop_club](https://github.com/drwhut/tabletop_club_godot_module) | Import resources at run-time.                  | ❌            |
 | [voronoi](https://github.com/rakai93/godot_voronoi)                   | Compute Voronoi diagrams.                      | ✔            |
 | [voxel](https://github.com/Zylann/godot_voxel)                        | Create volumetric worlds.                      | ❌            |
-| [lportal](https://github.com/lawnjelly/godot-lportal)                 | Portal rendering and culling.                  | ✔            |
-| [llightmap](https://github.com/lawnjelly/godot-llightmap)             | Soft shadows with high performance at runtime. | ❌            |
-| [smooth](https://github.com/lawnjelly/godot-smooth)                   | Fixed timestep interpolation helper nodes.     | ❌            |
-| [tabletop_club](https://github.com/drwhut/tabletop_club_godot_module) | Import resources at run-time.                  | ❌            |
 
 ## Trying out
 
