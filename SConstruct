@@ -38,7 +38,7 @@ def disable_module(name, reason=""):
     print("Disabling module: %s, %s" % (name, reason))
     args.append("module_%s_enabled=no" % name)
 
-cannot_compile = "cannot compile editor builds for Godot %s for all platforms as of now" % godot_ver
+cannot_compile = "cannot compile for Godot %s for all editor platforms as of now" % godot_ver
 
 disable_module("godot_box2d", cannot_compile)
 disable_module("voxel", cannot_compile)
