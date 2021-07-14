@@ -28,6 +28,7 @@ as it may not be actively updated.
 | [goost](https://github.com/goostengine/goost)                         | A general-purpose C++ extension for Godot.     | ✔            |
 | [json](https://github.com/godot-extended-libraries/json)              | Import JSON files as resources.                | ✔            |
 | [llightmap](https://github.com/lawnjelly/godot-llightmap)             | Soft shadows with high performance at runtime. | ❌            |
+| [lua](https://github.com/Trey2k/lua)                                  | Adds external Lua support via GDScript.        | ❌            |
 | [qurobullet](https://github.com/quinnvoker/qurobullet)                | Design 2D projectile system.                   | ❌            |
 | [smooth](https://github.com/lawnjelly/godot-smooth)                   | Fixed timestep interpolation helper nodes.     | ❌            |
 | [sqlite](https://github.com/godot-extended-libraries/godot-sqlite)    | SQLite for Godot based on gdsqlite-native.     | ✔            |

@@ -35,17 +35,30 @@ args.append("custom_modules=%s" % Dir("modules").abspath)
 
 # Disable some modules which cannot be built.
 def disable_module(name, reason=""):
-    print("Disabling module: %s, %s" % (name, reason))
+    msg = "Disabling module: %s"
+    if reason:
+        msg += ", %s" % reason
     args.append("module_%s_enabled=no" % name)
 
-cannot_compile = "cannot compile for Godot %s for all editor platforms as of now" % godot_ver
+if ARGUMENTS.get("module", ""):
+    # Disable all modules except the one supplied via command-line.
+    module = ARGUMENTS["module"]
+    for name in os.listdir("modules"):
+        if name != module:
+            disable_module(name)
 
-disable_module("godot_box2d", cannot_compile)
-disable_module("voxel", cannot_compile)
-disable_module("tabletop_club_godot_module", cannot_compile)
-disable_module("qurobullet", cannot_compile)
-disable_module("llightmap", cannot_compile)
-disable_module("smooth", cannot_compile)
+    args.append("custom_modules_recursive=no")
+
+else:
+    cannot_compile = "cannot compile for Godot %s for all editor platforms as of now" % godot_ver
+
+    disable_module("godot_box2d", cannot_compile)
+    disable_module("voxel", cannot_compile)
+    disable_module("tabletop_club_godot_module", cannot_compile)
+    disable_module("qurobullet", cannot_compile)
+    disable_module("llightmap", cannot_compile)
+    disable_module("lua", cannot_compile)
+    disable_module("smooth", cannot_compile)
 
 # Append the default `extra_suffix` to distinguish between other builds.
 args.append("extra_suffix=community")
