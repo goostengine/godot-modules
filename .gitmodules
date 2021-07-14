@@ -26,10 +26,6 @@
 	path = modules/voxel
 	url = https://github.com/Zylann/godot_voxel
 	branch = godot3.3
-[submodule "lportal"]
-	path = modules/lportal
-	url = https://github.com/lawnjelly/godot-lportal
-	branch = master
 [submodule "llightmap"]
 	path = modules/llightmap
 	url = https://github.com/lawnjelly/godot-llightmap
