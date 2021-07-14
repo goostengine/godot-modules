@@ -35,18 +35,15 @@ args.append("custom_modules=%s" % Dir("modules").abspath)
 
 # Disable some modules which cannot be built.
 def disable_module(name, reason=""):
-    print("Disabling module: %s" % name)
-    if reason:
-        print("Reason: %s" % reason)
+    print("Disabling module: %s, %s" % (name, reason))
     args.append("module_%s_enabled=no" % name)
-    
-cannot_compile = "Cannot compile for Godot %s as of now." % godot_ver
+
+cannot_compile = "cannot compile editor builds for Godot %s for all platforms as of now" % godot_ver
 
 disable_module("godot_box2d", cannot_compile)
 disable_module("voxel", cannot_compile)
 disable_module("tabletop_club_godot_module", cannot_compile)
 disable_module("qurobullet", cannot_compile)
-disable_module("sqlite", cannot_compile)
 disable_module("llightmap", cannot_compile)
 disable_module("smooth", cannot_compile)
 

@@ -31,7 +31,7 @@ as it may not be actively updated.
 | [lportal](https://github.com/lawnjelly/godot-lportal)                 | Portal rendering and culling.                  | ✔            |
 | [qurobullet](https://github.com/quinnvoker/qurobullet)                | Design 2D projectile system.                   | ❌            |
 | [smooth](https://github.com/lawnjelly/godot-smooth)                   | Fixed timestep interpolation helper nodes.     | ❌            |
-| [sqlite](https://github.com/godot-extended-libraries/godot-sqlite)    | SQLite for Godot based on gdsqlite-native.     | ❌            |
+| [sqlite](https://github.com/godot-extended-libraries/godot-sqlite)    | SQLite for Godot based on gdsqlite-native.     | ✔            |
 | [tabletop_club](https://github.com/drwhut/tabletop_club_godot_module) | Import resources at run-time.                  | ❌            |
 | [voronoi](https://github.com/rakai93/godot_voronoi)                   | Compute Voronoi diagrams.                      | ✔            |
 | [voxel](https://github.com/Zylann/godot_voxel)                        | Create volumetric worlds.                      | ❌            |
