@@ -21,21 +21,21 @@ use in your project, it's *not* recommended to use this repository in production
 as it may not be actively updated.
 
 ## List of modules
-|                                     Module name                                     |               Short description                | Build status |
-| ----------------------------------------------------------------------------------- | ---------------------------------------------- | ------------ |
-| [anl](https://github.com/Xrayez/godot-anl)                                          | Accidental Noise Library in Godot.             | ✔            |
-| [box2d](https://github.com/briansemrau/godot_box2d)                                 | Integrates Box2D physics library in Godot.     | ❌            |
-| [goost](https://github.com/goostengine/goost)                                       | A general-purpose C++ extension for Godot.     | ✔            |
-| [json](https://github.com/godot-extended-libraries/json)                            | Import JSON files as resources.                | ✔            |
-| [llightmap](https://github.com/lawnjelly/godot-llightmap)                           | Soft shadows with high performance at runtime. | ❌            |
-| [lua](https://github.com/Trey2k/lua)                                                | Adds external Lua support via GDScript.        | ❌            |
-| [qurobullet](https://github.com/quinnvoker/qurobullet)                              | Design 2D projectile system.                   | ❌            |
-| [smooth](https://github.com/lawnjelly/godot-smooth)                                 | Fixed timestep interpolation helper nodes.     | ❌            |
-| [sqlite](https://github.com/godot-extended-libraries/godot-sqlite)                  | SQLite for Godot based on gdsqlite-native.     | ✔            |
-| [tabletop_club](https://github.com/drwhut/tabletop_club_godot_module)               | Import resources at run-time.                  | ❌            |
-| [terrain_generator](https://github.com/EternalColor/Godot-Planet-Generator-Modulet) | Import resources at run-time.                  | ✔            |
-| [voronoi](https://github.com/rakai93/godot_voronoi)                                 | Compute Voronoi diagrams.                      | ✔            |
-| [voxel](https://github.com/Zylann/godot_voxel)                                      | Create volumetric worlds.                      | ❌            |
+|                                     Module name                                     |                  Short description                  | Build status |
+| ----------------------------------------------------------------------------------- | --------------------------------------------------- | ------------ |
+| [anl](https://github.com/Xrayez/godot-anl)                                          | Accidental Noise Library in Godot.                  | ✔            |
+| [box2d](https://github.com/briansemrau/godot_box2d)                                 | Integrates Box2D physics library in Godot.          | ❌            |
+| [goost](https://github.com/goostengine/goost)                                       | A general-purpose C++ extension for Godot.          | ✔            |
+| [json](https://github.com/godot-extended-libraries/json)                            | Import JSON files as resources.                     | ✔            |
+| [llightmap](https://github.com/lawnjelly/godot-llightmap)                           | Soft shadows with high performance at runtime.      | ❌            |
+| [lua](https://github.com/Trey2k/lua)                                                | Adds external Lua support via GDScript.             | ❌            |
+| [qurobullet](https://github.com/quinnvoker/qurobullet)                              | Design 2D projectile system.                        | ❌            |
+| [smooth](https://github.com/lawnjelly/godot-smooth)                                 | Fixed timestep interpolation helper nodes.          | ❌            |
+| [sqlite](https://github.com/godot-extended-libraries/godot-sqlite)                  | SQLite for Godot based on gdsqlite-native.          | ✔            |
+| [tabletop_club](https://github.com/drwhut/tabletop_club_godot_module)               | Import resources at run-time.                       | ❌            |
+| [terrain_generator](https://github.com/EternalColor/Godot-Planet-Generator-Modulet) | Create planet meshes with OpenSimplexNoise terrain. | ✔            |
+| [voronoi](https://github.com/rakai93/godot_voronoi)                                 | Compute Voronoi diagrams.                           | ✔            |
+| [voxel](https://github.com/Zylann/godot_voxel)                                      | Create volumetric worlds.                           | ❌            |
 
 ## Trying out
 
