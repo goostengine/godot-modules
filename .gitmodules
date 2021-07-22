@@ -46,3 +46,7 @@
 	path = modules/lua
 	url = https://github.com/Trey2k/lua
 	branch = main
+[submodule "terrain_generator"]
+	path = modules/terrain_generator
+	url = https://github.com/EternalColor/Godot-Planet-Generator-Module
+	branch = master
