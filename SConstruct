@@ -59,7 +59,6 @@ else:
     disable_module("llightmap", cannot_compile)
     disable_module("lua", cannot_compile)
     disable_module("smooth", cannot_compile)
-    disable_module("terrain_generator", "Build issue on Linux platform (GitHub Actions).")
 
 # Append the default `extra_suffix` to distinguish between other builds.
 args.append("extra_suffix=community")
