@@ -36,7 +36,7 @@ temporarily disabled due to other reasons as denoted in "Build status" column.
 | [smooth](https://github.com/lawnjelly/godot-smooth)                                | Fixed timestep interpolation helper nodes.          | 🔴            |
 | [sqlite](https://github.com/godot-extended-libraries/godot-sqlite)                 | SQLite for Godot based on gdsqlite-native.          | 🟢            |
 | [tabletop_club](https://github.com/drwhut/tabletop_club_godot_module)              | Import resources at run-time.                       | 🔴            |
-| [terrain_generator](https://github.com/EternalColor/Godot-Planet-Generator-Module) | Create planet meshes with OpenSimplexNoise terrain. | 🟡            |
+| [terrain_generator](https://github.com/EternalColor/Godot-Planet-Generator-Module) | Create planet meshes with OpenSimplexNoise terrain. | 🟢            |
 | [voronoi](https://github.com/rakai93/godot_voronoi)                                | Compute Voronoi diagrams.                           | 🟢            |
 | [voxel](https://github.com/Zylann/godot_voxel)                                     | Create volumetric worlds.                           | 🔴            |
 
