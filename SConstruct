@@ -50,7 +50,7 @@ if ARGUMENTS.get("module", ""):
     args.append("custom_modules_recursive=no")
 
 else:
-    cannot_compile = "cannot compile for Godot %s for all editor platforms as of now" % godot_ver
+    cannot_compile = "Cannot compile for Godot %s for all editor platforms as of now." % godot_ver
 
     disable_module("godot_box2d", cannot_compile)
     disable_module("voxel", cannot_compile)
@@ -59,6 +59,7 @@ else:
     disable_module("llightmap", cannot_compile)
     disable_module("lua", cannot_compile)
     disable_module("smooth", cannot_compile)
+    disable_module("terrain_generator", "Build issue on Linux platform (GitHub Actions).")
 
 # Append the default `extra_suffix` to distinguish between other builds.
 args.append("extra_suffix=community")
