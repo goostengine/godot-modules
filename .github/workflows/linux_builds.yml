@@ -53,6 +53,11 @@ jobs:
           python --version
           scons --version
 
+      # Helps to avoid "Argument list too long error" when compiling with SCons.
+      - name: Configure ulimit
+        run: |
+           ulimit -s unlimited
+
       - name: Compilation
         env:
           SCONS_CACHE: ${{github.workspace}}/.scons_cache/
