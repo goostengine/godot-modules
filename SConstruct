@@ -60,6 +60,8 @@ else:
     disable_module("lua", cannot_compile)
     disable_module("smooth", cannot_compile)
 
+    disable_module("git", "Temporarily disabled")
+
 # Append the default `extra_suffix` to distinguish between other builds.
 args.append("extra_suffix=community")
 os.environ["BUILD_NAME"] = "community"
