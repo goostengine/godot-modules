@@ -61,7 +61,6 @@ else:
     disable_module("smooth", cannot_compile)
 
     disable_module("goost", "Temporarily disabled")
-    disable_module("gif", "Temporarily disabled")
 
 # Append the default `extra_suffix` to distinguish between other builds.
 args.append("extra_suffix=community")
