@@ -40,13 +40,22 @@ def disable_module(name, reason=""):
         msg += ", %s" % reason
     args.append("module_%s_enabled=no" % name)
 
+# Enable some modules which might be disabled by default.
+def enable_module(name):
+    args.append("module_%s_enabled=yes" % name)
+
+enable_module("luascript")
+
 if ARGUMENTS.get("module", ""):
     # Disable all modules except the one supplied via command-line.
     module = ARGUMENTS["module"]
+    enable_module(module)
+
     for name in os.listdir("modules"):
         if name != module:
             disable_module(name)
 
+    # Make sure we don't accidentally pick up nested modules.
     args.append("custom_modules_recursive=no")
 
 else:
