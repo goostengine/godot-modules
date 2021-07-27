@@ -11,8 +11,9 @@ curated by the [Goost](https://github.com/goostengine/goost) project.
 
 ## Trying out
 
-If available, you can download nighty builds of the modules listed below for
-Linux, macOS, Windows integrated into Godot editor builds for testing purposes:
+If available, you can download nighty builds of the
+[modules listed below](#list-of-modules) for Linux, macOS, Windows integrated
+into Godot editor builds for testing purposes:
 
 - [🐧 Linux](https://nightly.link/goostengine/godot-modules/workflows/linux_builds/gd3/linux-editor.zip)
 - [🍎 macOS](https://nightly.link/goostengine/godot-modules/workflows/macos_builds/gd3/macos-editor.zip)
