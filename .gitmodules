@@ -50,3 +50,7 @@
 	path = modules/terrain_generator
 	url = https://github.com/EternalColor/Godot-Planet-Generator-Module
 	branch = master
+[submodule "luascript"]
+	path = modules/luascript
+	url = https://github.com/perbone/luascript
+	branch = master
