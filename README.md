@@ -7,18 +7,34 @@
 A collection of various community
 [Godot Engine](https://github.com/godotengine/godot)
 [C++ modules](https://docs.godotengine.org/en/stable/development/cpp/custom_modules_in_cpp.html)
-curated by [Goost](https://github.com/goostengine/goost).
+curated by the [Goost](https://github.com/goostengine/goost) project.
+
+## Trying out
+
+If available, you can download nighty builds of the modules listed below for
+Linux, macOS, Windows integrated into Godot editor builds for testing purposes:
+
+- [🐧 Linux](https://nightly.link/goostengine/godot-modules/workflows/linux_builds/gd3/linux-editor.zip)
+- [🍎 macOS](https://nightly.link/goostengine/godot-modules/workflows/macos_builds/gd3/macos-editor.zip)
+- [🎨 Windows](https://nightly.link/goostengine/godot-modules/workflows/windows_builds/gd3/windows-editor.zip)
+
+Otherwise you'll have to build Godot with custom modules yourself, see
+[Building](#building) section.
+
+## Purpose
 
 The goal of this repository is to collect C++ modules for the purpose of
 accessibility and the ease of discovery. This allows to try out various modules
 conveniently from within a single, centralized place. Note that only editor
-builds are tested and provided via build artifacts.
+builds are provided via build artifacts.
 
 Each module represents a `git` submodule versioned as part of this repository.
 
 It's recommended that you manually clone modules of interest which you intend to
 use in your project, it's *not* recommended to use this repository in production
 as it may not be actively updated.
+
+## List of modules
 
 Note that some modules may not be able to be built properly, or they are
 temporarily disabled due to other reasons as denoted in "Build status" column:
@@ -27,7 +43,6 @@ temporarily disabled due to other reasons as denoted in "Build status" column:
 - 🟡 Can build only for some editor platforms, or require certain workarounds.
 - 🔴 Cannot build due to direct compilation errors. Please report such bugs upstream.
 
-## List of modules
 |                                    Module name                                     |                  Short description                  | Build status |
 | ---------------------------------------------------------------------------------- | --------------------------------------------------- | ------------ |
 | [anl](https://github.com/Xrayez/godot-anl)                                         | Accidental Noise Library in Godot.                  | 🟢            |
@@ -44,17 +59,6 @@ temporarily disabled due to other reasons as denoted in "Build status" column:
 | [terrain_generator](https://github.com/EternalColor/Godot-Planet-Generator-Module) | Create planet meshes with OpenSimplexNoise terrain. | 🟢            |
 | [voronoi](https://github.com/rakai93/godot_voronoi)                                | Compute Voronoi diagrams.                           | 🟢            |
 | [voxel](https://github.com/Zylann/godot_voxel)                                     | Create volumetric worlds.                           | 🟡            |
-
-## Trying out
-
-If available, you can download nighty builds of the above modules for Linux,
-macOS, Windows integrated into Godot editor builds for testing purposes:
-
-- [🐧 Linux](https://nightly.link/goostengine/godot-modules/workflows/linux_builds/gd3/linux-editor.zip)
-- [🍎 macOS](https://nightly.link/goostengine/godot-modules/workflows/macos_builds/gd3/macos-editor.zip)
-- [🎨 Windows](https://nightly.link/goostengine/godot-modules/workflows/windows_builds/gd3/windows-editor.zip)
-
-Otherwise you'll have to build Godot with custom modules yourself, read on.
 
 ## Building
 
