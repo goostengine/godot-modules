@@ -44,8 +44,6 @@ def disable_module(name, reason=""):
 def enable_module(name):
     args.append("module_%s_enabled=yes" % name)
 
-enable_module("luascript")
-
 if ARGUMENTS.get("module", ""):
     # Disable all modules except the one supplied via command-line.
     module = ARGUMENTS["module"]
@@ -68,6 +66,7 @@ else:
     disable_module("llightmap", cannot_compile)
     disable_module("lua", cannot_compile)
     disable_module("smooth", cannot_compile)
+    disable_module("luascript", "Cannot compile as a custom module; cannot compile for Windows")
 
     disable_module("git", "Temporarily disabled")
 
