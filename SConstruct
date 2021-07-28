@@ -59,7 +59,7 @@ if ARGUMENTS.get("module", ""):
 else:
     cannot_compile = "Cannot compile for Godot %s for all editor platforms as of now." % godot_ver
 
-    disable_module("godot_box2d", cannot_compile)
+    disable_module("godot_box2d", cannot_compile) # https://github.com/briansemrau/godot_box2d/issues/72
     disable_module("voxel", cannot_compile)
     disable_module("tabletop_club_godot_module", cannot_compile)
     disable_module("qurobullet", cannot_compile)

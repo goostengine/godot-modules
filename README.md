@@ -47,7 +47,7 @@ temporarily disabled due to other reasons as denoted in "Build status" column:
 |                                    Module name                                     |                  Short description                  | Build status |
 | ---------------------------------------------------------------------------------- | --------------------------------------------------- | ------------ |
 | [anl](https://github.com/Xrayez/godot-anl)                                         | Accidental Noise Library in Godot.                  | 🟢            |
-| [box2d](https://github.com/briansemrau/godot_box2d)                                | Integrates Box2D physics library in Godot.          | 🔴            |
+| [box2d](https://github.com/briansemrau/godot_box2d)                                | Integrates Box2D physics library in Godot.          | 🟡            |
 | [goost](https://github.com/goostengine/goost)                                      | A general-purpose C++ extension for Godot.          | 🟢            |
 | [json](https://github.com/godot-extended-libraries/json)                           | Import JSON files as resources.                     | 🟢            |
 | [llightmap](https://github.com/lawnjelly/godot-llightmap)                          | Soft shadows with high performance at runtime.      | 🔴            |
