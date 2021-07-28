@@ -64,7 +64,6 @@ else:
     disable_module("tabletop_club_godot_module", cannot_compile)
     disable_module("qurobullet", cannot_compile)
     disable_module("llightmap", cannot_compile)
-    disable_module("lua", cannot_compile)
     disable_module("smooth", cannot_compile)
     disable_module("luascript", "Cannot compile as a custom module; cannot compile for Windows")
 
